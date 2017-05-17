@@ -7,11 +7,11 @@ Use IPC utilizing signals to pass information to forked children processes. Thes
 
 FORMAL PROBLEM DESCRIPTION:
 
-a) The IPC is now to be conducted with signals and signal handlers but not with Pipes or Shared
+Part A) The IPC is now to be conducted with signals and signal handlers but not with Pipes or Shared
 Memory. You should go over the available signals and figure out how to pass information from
 the parent to the child and vice versa through signals/interrupts/signal handlers.
 
-b) Your parent process becomes now very impatient…. It does not want to wait for any child
+Part B) Your parent process becomes now very impatient…. It does not want to wait for any child
 process longer than 3 seconds. If a child process takes longer than this, do not incorporate the
 contribution of this process to the final result. And not only this alone, but the parent should
 “mark” the slow behaving processes and “notify” all its children processes about “who” this
@@ -21,7 +21,7 @@ attempts to terminate a given process? Write the proper instructions that ensure
 in this part, and figure out the proper signals to be incorporated again either by the parent or the
 children processes.
 
-c) The user running this program (… this is your group) got very impatient while waiting for all
+Part C) The user running this program (… this is your group) got very impatient while waiting for all
 these calculations to be conducted, and decides to be done with the whole experiment by typing:
 i) CTL-C, ii) select your own interrupt, iii) also the user may want to experiment and attempt to
 terminate certain processes (children or parent). Your program should contain signal handlers that
@@ -32,7 +32,7 @@ termination or suspension or in general of accepting the signals. We have define
 (i, ii, iii). When can you do the latter and when not? For the cases that you can, please show how
 you have incorporated this capability to your code and your results.
 
-
+COMPILING INSTRUCTIONS:
 
 
 PART A - PartA.c
